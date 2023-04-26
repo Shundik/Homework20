@@ -1,1 +1,5 @@
-# Homework20
+# Homework20![2023-04-26_15-34-33](https://user-images.githubusercontent.com/121963111/234606536-c70a413a-a944-442f-a880-5b102a1ef579.png)
+![2023-04-26_15-34-01](https://user-images.githubusercontent.com/121963111/234606539-20958565-19d2-4e8b-8387-f5afbdc71899.png)
+![2023-04-26_15-35-47](https://user-images.githubusercontent.com/121963111/234606563-3ae83495-1e13-4a71-b07f-fa4615e77318.png)
+![2023-04-26_15-34-56](https://user-images.githubusercontent.com/121963111/234606569-6936a363-ca44-47c2-964f-f2a03661acee.png)
+![2023-04-26_15-36-16](https://user-images.githubusercontent.com/121963111/234606573-40d8126d-9fad-4b45-a555-bbc18e81bedb.png)

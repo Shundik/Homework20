@@ -1,20 +1,14 @@
-from django.shortcuts import render
 from rest_framework import generics
 from .serializers import CarDetailSerializer, CarListSerializer
-from .models import Car
 from .permissions import IsOwnerOnReadOnly
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
-from rest_framework.authentication import TokenAuthentication
 from rest_framework.response import Response
-import xlwt
-from django.http import HttpResponse
-from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.http import HttpResponse
-from tablib import Dataset
-
 from .resources import CarResource
 from .models import Car
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 
 
 class CarCreateView(generics.CreateAPIView):
@@ -32,10 +26,18 @@ class CarsListView(generics.ListAPIView):
         return Response({1: 123})
 
 
+
+
+
 class CarsDetailView(generics.RetrieveDestroyAPIView):
     serializer_class = CarDetailSerializer
     queryset = Car.objects.all()
     permission_classes = (IsOwnerOnReadOnly,)
+
+    def post(self, request):
+        print(request.data)
+        print(request.POST)
+        return Response({1: 123})
 
 
 def export_data(request):
@@ -58,4 +60,5 @@ def export_data(request):
             return response
 
     return render(request, 'export.html')
+
 # Create your views here.

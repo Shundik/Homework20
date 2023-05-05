@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from .models import Car
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 
 
 class CarListSerializer(serializers.ModelSerializer):
